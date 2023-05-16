@@ -1,7 +1,9 @@
 <template>
     <span>{{count}}</span>
-    <div pill type="button" variant="primary" @click="increase()">Жмакни</div>
-    <div type="button" variant="danger" @click="clear()">Сбросить</div>
+    <div class="flex">
+    <div class="btn btn-primary" type="button" @click="increase()">Жмакни</div>
+    <div class="btn btn-danger" type="button" @click="clear()">Сбросить</div>
+    </div>
 </template>
 
 <script setup lang="ts">
