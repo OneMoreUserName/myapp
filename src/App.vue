@@ -1,10 +1,14 @@
 <template>
-  <div>HelloWorld</div>
-  <Upcliker/>
+  <div class="m-4">
+    <div>HelloWorld</div>
+    <RouterView />
+    <!-- <Cliker/> -->
+  </div>
 </template>
 
 <script setup lang="ts">
-import Upcliker from './components/Upcliker.vue';
+// import Cliker from './components/Cliker.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <style scoped>

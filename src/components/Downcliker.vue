@@ -1,7 +1,7 @@
 <template>
     <span>{{ count }}</span>
     <div class="col-4 row">
-        <div class="col-4 m-2 btn btn-primary" type="button" @click="increase()">Побольше</div>
+        <div class="col-4 m-2 btn btn-primary" type="button" @click="decrease()">Поменьше</div>
         <div class="col-4 m-2 btn btn-danger" type="button" @click="clear()">Сбросить</div>
     </div>
 </template>
@@ -18,10 +18,9 @@ onMounted(() => {
     console.log(`count: ${route.params.count}`);
 })
 
-function increase() {
-    count.value++;
+function decrease() {
+    count.value--;
 }
-
 function clear() {
     count.value = 0;
 }
