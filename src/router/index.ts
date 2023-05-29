@@ -12,12 +12,12 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: "/up/:count",
         name: "Up",
-        component:() => Upcliker,
+        component: () => Upcliker,
     },   
     {
         path: "/down/:count",
-        name: "down",
-        component:() => Downcliker,
+        name: "Down",
+        component: () => Downcliker,
     }    
 ]
 
