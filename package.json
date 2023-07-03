@@ -12,6 +12,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
+    "pinia": "^2.1.4",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vue": "^3.3.2",

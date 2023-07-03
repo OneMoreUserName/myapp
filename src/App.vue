@@ -1,14 +1,15 @@
 <template>
   <div class="m-4">
     <div>HelloWorld</div>
-    <RouterView />
-    <!-- <Cliker/> -->
+    <RouterView/>
   </div>
 </template>
 
 <script setup lang="ts">
-// import Cliker from './components/Cliker.vue';
-import { RouterView } from 'vue-router';
+import { onMounted } from 'vue';
+import router from './router';
+
+onMounted (() => router.push({name: 'Home'}))
 </script>
 
 <style scoped>
